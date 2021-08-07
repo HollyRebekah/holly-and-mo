@@ -1,12 +1,20 @@
-import { NavBar } from "./components/NavBar/NavBar";
+import { useMedia } from 'use-media';
+
+import { NavBar } from './components/NavBar/NavBar';
+import { Hero } from './components/Hero/Hero';
+
+import styles from './App.module.css';
 
 const App = () => {
+  const isMobile = useMedia({ maxWidth: '600px' });
+
   return (
-		<div className="App">
-			<header className="App-header">
-				<NavBar />
-			</header>
-			{/* <footer>
+    <div className={styles.app}>
+      <header className={isMobile ? styles.appHeader : ''}>
+        <NavBar />
+      </header>
+      <Hero />
+      {/* <footer>
 				<div>
 					Icons made by{" "}
 					<a
@@ -25,8 +33,8 @@ const App = () => {
 					</a>
 				</div>
 			</footer> */}
-		</div>
-	);
-}
+    </div>
+  );
+};
 
 export default App;

@@ -1,0 +1,9 @@
+.app {
+  height: 100%;
+  position: relative;
+}
+
+.appHeader {
+  position: absolute;
+  z-index: 10;
+}
