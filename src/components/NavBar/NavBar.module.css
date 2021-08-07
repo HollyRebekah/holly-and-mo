@@ -1,5 +1,82 @@
 /* Nav Bar */
 
-.navBar {
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
 }
+
+
+.navBar {
+    display: flex;
+}
+
+.navBarMobile {
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    overflow-x: hidden;
+    left: 0;
+    top: 0;
+    background-color: #fff;;
+    transition: 0.5s
+}
+
+.navBarLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 75%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    top: 12.5%;
+    animation: slide-in 0.4s ease-in;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .navBarLinks {
+        flex-direction:row;
+        font-size: 20px;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+}
+
+.burgerMenuButton, .closeButton {
+    background:none;
+    border: none;
+    cursor: pointer;
+    animation: slide-in 0.4s ease-in;
+}
+
+.burgerMenuButton:hover > .burgerMenuIcon,
+.closeButton:hover > .closeButtonIcon {
+    transform: scale(1.1);
+}
+
+.closeButton {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
+}
+
+.burgerMenuIcon, .closeButtonIcon {
+    width: 50px;
+    height: 50px;
+    transition: all .2s ease-in-out
+}
+
+
