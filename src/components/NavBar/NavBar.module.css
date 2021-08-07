@@ -20,6 +20,7 @@
 @media only screen and (min-width: 600px) {
   .navBar {
     background: var(--background-light);
+    border-bottom: 2px solid var(--background-dark);
   }
 }
 

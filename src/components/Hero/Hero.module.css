@@ -8,3 +8,40 @@
   position: relative;
   height: 100%;
 }
+
+@media only screen and (min-width: 600px) {
+  .heroImage {
+    height: calc(100% - 66px);
+  }
+}
+
+.heroText {
+  width: max-content;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  position: relative;
+  color: var(--background-dark);
+  max-width: 250px;
+}
+
+@media only screen and (min-width: 600px) {
+  .heroText {
+    max-width: 100%;
+  }
+}
+
+.textLarge {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  .textLarge {
+    font-size: 72px;
+  }
+}
+
+.textSmall {
+  display: block;
+}
