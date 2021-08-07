@@ -79,8 +79,8 @@
 
 .burgerMenuIcon,
 .closeButtonIcon {
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   transition: all 0.2s ease-in-out;
 }
 
