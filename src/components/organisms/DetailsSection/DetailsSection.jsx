@@ -8,7 +8,7 @@ import styles from './DetailsSection.module.css';
 
 export const DetailsSection = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="details" className={styles.wrapper}>
       <Detail
         icon={<BarnIcon />}
         title="Where"

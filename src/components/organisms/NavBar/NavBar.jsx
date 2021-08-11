@@ -14,11 +14,21 @@ export const NavBar = () => {
   const renderNavBar = () => {
     return (
       <div className={styles.navBarLinks}>
-        <span>Details</span>
-        <span>Destination</span>
-        <span>Getting There</span>
-        <span>Accommodation</span>
-        <span>RSVP</span>
+        <a className={styles.navLink} href="#details">
+          Details
+        </a>
+        <a className={styles.navLink} href="#details">
+          Destination
+        </a>
+        <a className={styles.navLink} href="#details">
+          Getting There
+        </a>
+        <a className={styles.navLink} href="#details">
+          Accommodation
+        </a>
+        <a className={styles.navLink} href="#details">
+          RSVP
+        </a>
       </div>
     );
   };
