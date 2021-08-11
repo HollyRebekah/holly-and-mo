@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { useMedia } from 'use-media';
+
 import { ReactComponent as BurgerMenuIcon } from '../../../svgs/menu-icon.svg';
 import { ReactComponent as CloseIcon } from '../../../svgs/cancel-icon.svg';
 
@@ -14,21 +16,62 @@ export const NavBar = () => {
   const renderNavBar = () => {
     return (
       <div className={styles.navBarLinks}>
-        <a className={styles.navLink} href="#details">
+        <Link
+          className={styles.navLink}
+          activeClass="active"
+          to="details"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Details
-        </a>
-        <a className={styles.navLink} href="#details">
+        </Link>
+        <Link
+          className={styles.navLink}
+          activeClass="active"
+          to="destination"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Destination
-        </a>
-        <a className={styles.navLink} href="#details">
+        </Link>
+
+        <Link
+          className={styles.navLink}
+          activeClass="active"
+          to="getting-there"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Getting There
-        </a>
-        <a className={styles.navLink} href="#details">
+        </Link>
+        <Link
+          className={styles.navLink}
+          activeClass="active"
+          to="accommodation"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Accommodation
-        </a>
-        <a className={styles.navLink} href="#details">
+        </Link>
+        <Link
+          className={styles.navLink}
+          activeClass="active"
+          to="rsvp"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           RSVP
-        </a>
+        </Link>
       </div>
     );
   };

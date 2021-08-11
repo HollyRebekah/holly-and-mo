@@ -84,6 +84,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.navLink:hover {
+  cursor: pointer;
+}
+
 .navLink:hover:before {
   visibility: visible;
   transform: scaleX(1);

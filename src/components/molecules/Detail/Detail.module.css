@@ -13,6 +13,12 @@
   font-size: 48px;
 }
 
+@media only screen and (min-width: 600px) {
+  .wrapper > h2 {
+    font-size: 64px;
+  }
+}
+
 .wrapper > span {
   color: var(--background-dark);
   max-width: 175px;
@@ -20,10 +26,25 @@
   font-size: 18px;
 }
 
+@media only screen and (min-width: 600px) {
+  .wrapper > span {
+    max-width: 220px;
+    font-size: 22px;
+  }
+}
+
 .svgContainer {
   width: 80px;
   height: 80px;
   margin-bottom: 16px;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .svgContainer {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 .svgContainer > svg {
