@@ -2,6 +2,7 @@ html {
   --background-light: #f2ead9;
   --light-accent: #9da48e;
   --main-color: #d27d4d;
+  --secondary-dark: #c66a34;
   --background-dark: #33483d;
 }
 
@@ -11,13 +12,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  background-color: var(--background-light);
 }
 
 body > div {
   height: 100%;
 }
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */

@@ -21,7 +21,10 @@
 @media only screen and (min-width: 600px) {
   .navBar {
     background: var(--background-light);
-    border-bottom: 2px solid var(--background-dark);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
   }
 }
 
@@ -51,7 +54,7 @@
   top: 15%;
   animation: slide-in 0.4s ease-in;
   max-width: 1200px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 @media only screen and (min-width: 600px) {

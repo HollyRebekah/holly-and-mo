@@ -1,7 +1,8 @@
 import { useMedia } from 'use-media';
 
-import { NavBar } from './components/NavBar/NavBar';
-import { Hero } from './components/Hero/Hero';
+import { NavBar } from './components/organisms/NavBar/NavBar';
+import { Hero } from './components/organisms/Hero/Hero';
+import { DetailsSection } from './components/organisms/DetailsSection/DetailsSection';
 
 import styles from './App.module.css';
 
@@ -14,6 +15,7 @@ const App = () => {
         <NavBar />
       </header>
       <Hero />
+      <DetailsSection />
       {/* <footer>
 				<div>
 					Icons made by{" "}
