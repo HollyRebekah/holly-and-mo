@@ -3,6 +3,7 @@ import { useMedia } from 'use-media';
 import { NavBar } from './components/organisms/NavBar/NavBar';
 import { Hero } from './components/organisms/Hero/Hero';
 import { DetailsSection } from './components/organisms/DetailsSection/DetailsSection';
+import { Destination } from './components/organisms/Destination/Destination';
 
 import styles from './App.module.css';
 
@@ -16,6 +17,7 @@ const App = () => {
       </header>
       <Hero />
       <DetailsSection />
+      <Destination />
       {/* <footer>
 				<div>
 					Icons made by{" "}
