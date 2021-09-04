@@ -5,6 +5,7 @@ import { Hero } from './components/organisms/Hero/Hero';
 import { Details } from './components/organisms/Details/Details';
 import { Venue } from './components/organisms/Venue/Venue';
 import { Accommodation } from './components/organisms/Accommodation/Accommodation';
+import { Rsvp } from './components/organisms/RSVP/Rsvp';
 
 import styles from './App.module.css';
 
@@ -20,6 +21,7 @@ const App = () => {
 		  <Details />
 		  <Venue />
 		  <Accommodation />
+		  <Rsvp />
       {/* <footer>
 				<div>
 					Icons made by{" "}

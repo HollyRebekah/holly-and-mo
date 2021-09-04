@@ -9,3 +9,9 @@
       height: calc(100vh - 66px);
     }
   }
+
+  .sectionDark {
+    background-color: var(--background-dark);
+    height: 100vh;
+    color: var(--background-light)
+  }
