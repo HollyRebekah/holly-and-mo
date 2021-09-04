@@ -3,7 +3,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 100vh;
   background-color: var(--background-dark);
   color: var(--background-light);
@@ -21,6 +21,7 @@
   position: relative;
   width: 100%;
   padding-top: 58.44%;
+  height: 23%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -46,18 +47,43 @@
   }
 }
 
+.textWrapper {
+  height: 33%;
+  text-align: center;
+  padding: 32px 28px 0;
+} 
+
 @media only screen and (min-width: 600px) {
-  .textWraper {
+  .textWrapper {
     width: 34%;
+    margin: auto;
+    padding: 0 28px;
   }
 }
 
-.text {
-  width: fit-content;
-  margin: 0 auto;
+.textWrapper > h3 {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 48px;
+  letter-spacing: 3px;
+  margin: 0 0 20px;
 }
 
-.text > h3 {
-  font-family: 'Bilbo Swash Caps', cursive;
-  font-size: 40px;
+@media only screen and (min-width: 600px) {
+  .textWrapper > h3 {
+    font-size: 56px;
+  }
 }
+
+.textWrapper > p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 600px) {
+  .textWrapper > p {
+    font-size: 20px;
+  }
+}
+

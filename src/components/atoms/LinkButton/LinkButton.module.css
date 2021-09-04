@@ -1,0 +1,26 @@
+/* Link Button */
+
+.wrapper {
+    border: 1px solid var(--background-light);
+    border-radius: 25px;
+    padding: 12px;
+    width: fit-content;
+    margin: 0 auto;
+    transition: all 0.1s ease-in-out;
+}
+
+.linkButton {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--background-light);
+    padding: 12px;
+    transition: all 0.1s ease-in-out;
+}
+
+.wrapper:hover {
+    background-color: var(--background-light);
+}
+
+.wrapper:hover > .linkButton {
+    color: var(--background-dark);
+}
