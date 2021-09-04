@@ -30,25 +30,13 @@ export const NavBar = () => {
         <Link
           className={styles.navLink}
           activeClass="active"
-          to="destination"
+          to="venue"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
         >
-          Destination
-        </Link>
-
-        <Link
-          className={styles.navLink}
-          activeClass="active"
-          to="getting-there"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Getting There
+          Venue
         </Link>
         <Link
           className={styles.navLink}

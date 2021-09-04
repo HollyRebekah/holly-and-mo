@@ -1,0 +1,11 @@
+/* Section */
+
+.section {
+    height: 100vh;
+}
+
+@media only screen and (min-width: 600px) {
+    .section {
+      height: calc(100vh - 66px);
+    }
+  }

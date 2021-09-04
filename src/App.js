@@ -2,8 +2,9 @@ import { useMedia } from 'use-media';
 
 import { NavBar } from './components/organisms/NavBar/NavBar';
 import { Hero } from './components/organisms/Hero/Hero';
-import { DetailsSection } from './components/organisms/DetailsSection/DetailsSection';
-import { Destination } from './components/organisms/Destination/Destination';
+import { Details } from './components/organisms/Details/Details';
+import { Venue } from './components/organisms/Venue/Venue';
+import { Accommodation } from './components/organisms/Accommodation/Accommodation';
 
 import styles from './App.module.css';
 
@@ -12,12 +13,13 @@ const App = () => {
 
   return (
     <div className={styles.app}>
-      <header className={isMobile ? styles.appHeader : ''}>
-        <NavBar />
-      </header>
-      <Hero />
-      <DetailsSection />
-      <Destination />
+		  <header className={isMobile ? styles.appHeader : ''}>
+			  <NavBar />
+		  </header>
+		  <Hero />
+		  <Details />
+		  <Venue />
+		  <Accommodation />
       {/* <footer>
 				<div>
 					Icons made by{" "}

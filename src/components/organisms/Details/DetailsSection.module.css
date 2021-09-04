@@ -1,10 +1,10 @@
 /* Detail Section */
 
 .wrapper {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 100%;
 }
 
 @media only screen and (min-width: 600px) {

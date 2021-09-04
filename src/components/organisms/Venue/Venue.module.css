@@ -1,4 +1,4 @@
-/* Destination */
+/* Venue */
 
 .wrapper {
   display: flex;
@@ -48,42 +48,67 @@
 }
 
 .textWrapper {
-  height: 33%;
   text-align: center;
-  padding: 32px 28px 0;
+  padding: 20px 24px;
 } 
 
 @media only screen and (min-width: 600px) {
   .textWrapper {
     width: 34%;
-    margin: auto;
-    padding: 0 28px;
+    padding: 0 20px;
+    height: 100%;
   }
 }
 
-.textWrapper > h3 {
+@media only screen and (min-width: 600px) {
+  .textContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.textWrapper h3 {
   font-family: 'Bilbo Swash Caps', cursive;
   font-size: 48px;
   letter-spacing: 3px;
-  margin: 0 0 20px;
+  margin: 16px 0;
+  color: var(--secondary-dark);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--background-light);
+  border-top: 1px solid var(--background-light);
 }
 
 @media only screen and (min-width: 600px) {
-  .textWrapper > h3 {
+  .textWrapper h3 {
     font-size: 56px;
+    padding: 20px 0;
+    margin: 20px 0;
   }
 }
 
-.textWrapper > p {
+.textWrapper p {
   margin-top: 0;
-  margin-bottom: 24px;
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.content {
+  margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 600px) {
-  .textWrapper > p {
+  .textWrapper p {
     font-size: 20px;
   }
+
+  .content {
+    margin-bottom: 24px;
+  }
 }
 
+.subheading {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
