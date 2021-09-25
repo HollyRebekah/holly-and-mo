@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './Section.module.css'
 
-export const Section = ({ children, dark }) => <section className={dark ? styles.sectionDark : styles.section}>{children}</section>
+export const Section = ({ children, dark, name }) => <section className={dark ? styles.sectionDark : styles.section}>{children}</section>
 
 Section.propTypes = {
     children: PropTypes.element.isRequired,

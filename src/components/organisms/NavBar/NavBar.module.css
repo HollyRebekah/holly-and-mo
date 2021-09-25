@@ -18,7 +18,7 @@
   letter-spacing: 2px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .navBar {
     background: var(--background-light);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -57,7 +57,7 @@
   letter-spacing: 2px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .navBarLinks {
     flex-direction: row;
     font-size: 20px;

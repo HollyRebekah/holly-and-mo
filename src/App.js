@@ -10,7 +10,7 @@ import { Rsvp } from './components/organisms/RSVP/Rsvp';
 import styles from './App.module.css';
 
 const App = () => {
-  const isMobile = useMedia({ maxWidth: '600px' });
+	const isMobile = useMedia({ maxWidth: '650px' });
 
   return (
     <div className={styles.app}>

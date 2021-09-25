@@ -19,7 +19,7 @@
   max-width: 250px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .heroText {
     max-width: 100%;
   }
@@ -30,7 +30,7 @@
   font-size: 50px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .textLarge {
     font-size: 72px;
   }
@@ -42,7 +42,7 @@
   letter-spacing: 2px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .textSmall {
     font-size: 32px;
   }

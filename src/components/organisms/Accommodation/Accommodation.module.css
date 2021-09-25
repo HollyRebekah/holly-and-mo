@@ -1,0 +1,45 @@
+/* Accommodation Section */
+
+
+.title {
+    font-weight: 700;
+    margin: 32px auto 0;
+    width: fit-content;
+    font-family: 'Bilbo Swash Caps', cursive;
+    color: var(--background-dark);
+    font-size: 64px;
+    letter-spacing: 3px;
+}
+
+.text {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 16px;
+}
+
+.cardWrapper {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+@media only screen and (min-width: 960px) {
+
+    section {
+      min-height: calc(100vh - 67px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cardWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .title {
+      margin-top: 0;
+    }
+  }

@@ -9,10 +9,10 @@
   color: var(--background-light);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .wrapper {
     flex-direction: row-reverse;
-    height: calc(100vh - 66px);
+    height: calc(100vh - 67px);
   }
 }
 
@@ -24,7 +24,7 @@
   height: 23%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .imageWrapper {
     width: 66%;
   }
@@ -41,9 +41,9 @@
   filter: sepia(0.5);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .imageWrapper > img {
-    height: calc(100vh - 66px);
+    height: calc(100vh - 67px);
   }
 }
 
@@ -52,7 +52,7 @@
   padding: 20px 24px;
 } 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .textWrapper {
     width: 34%;
     padding: 0 20px;
@@ -60,7 +60,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .textContainer {
     height: 100%;
     display: flex;
@@ -80,7 +80,7 @@
   border-top: 1px solid var(--background-light);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .textWrapper h3 {
     font-size: 56px;
     padding: 20px 0;
@@ -98,7 +98,7 @@
   margin-bottom: 16px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .textWrapper p {
     font-size: 20px;
   }
@@ -111,4 +111,8 @@
 .subheading {
   margin-bottom: 0;
   letter-spacing: 2px;
+}
+
+.button {
+  margin: 0 auto;
 }

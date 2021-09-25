@@ -3,9 +3,8 @@
 .wrapper {
     border: 1px solid var(--background-light);
     border-radius: 25px;
-    padding: 12px;
+    padding: 12px 12px 14px;
     width: fit-content;
-    margin: 0 auto;
     transition: all 0.1s ease-in-out;
 }
 
@@ -23,4 +22,20 @@
 
 .wrapper:hover > .linkButton {
     color: var(--background-dark);
+}
+
+.wrapperDark {
+    border: 1px solid var(--background-dark); 
+}
+
+.linkButtonDark {
+    color: var(--background-dark);
+}
+
+.wrapperDark:hover {
+    background-color: var(--background-dark);
+}
+
+.wrapperDark:hover > .linkButtonDark {
+    color: var(--background-light);
 }

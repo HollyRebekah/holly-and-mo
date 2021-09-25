@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { useMedia } from 'use-media';
 
 import { ReactComponent as BurgerMenuIcon } from '../../../svgs/menu-icon.svg';
@@ -11,7 +11,7 @@ import styles from './NavBar.module.css';
 export const NavBar = () => {
   const [showMobileLinks, setShowMobileLinks] = useState(false);
 
-  const isMobile = useMedia({ maxWidth: '600px' });
+  const isMobile = useMedia({ maxWidth: '650px' });
 
   const renderNavBar = () => {
     return (
@@ -22,7 +22,7 @@ export const NavBar = () => {
           to="details"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
         >
           Details
@@ -33,7 +33,7 @@ export const NavBar = () => {
           to="venue"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
         >
           Venue
@@ -44,7 +44,7 @@ export const NavBar = () => {
           to="accommodation"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
         >
           Accommodation
@@ -55,7 +55,7 @@ export const NavBar = () => {
           to="rsvp"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-60}
           duration={500}
         >
           RSVP
